@@ -73,7 +73,9 @@ export function calculateAnnualTax(grossIncome: number): number {
     }
 
 
-    // I'm not really a fan of how I've done this! 
+    // I'm not really a fan of how I've done this.
+    // The alternative is that you could add the 'previousThreshold' to each of the tax brackets, and do an Array.find(). 
+    // I generally prefer the Array.prototype methods. 
     let previousThreshold = 0; 
     let bracketToUse = null as null | TaxBracket; 
 
@@ -131,9 +133,6 @@ export function generateEmployeePayslip(employeeDetails: EmployeeDetails): Emplo
 
     const annualTax = calculateAnnualTax(annualSalary); 
     const payPeriodPercentage = calculatePayPeriodPercentage(paymentStartDate, paymentEndDate); 
-
-    const netAnnualIncome = annualSalary - annualSalary; 
-
     
     const monthlyGrossIncome = Math.floor(annualSalary * payPeriodPercentage);
     const monthlyTax = Math.ceil(annualTax * payPeriodPercentage);

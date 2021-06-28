@@ -1,7 +1,7 @@
 import { calculateAnnualTax, calculatePayPeriodPercentage, generateEmployeePayslip } from '.';
 
 describe ("calculateTax", () => {
-    it("calculates the right amount for the lowest bracket", () => {
+    it("calculates the right amount", () => {
         expect(calculateAnnualTax(60050)).toBe(11063.25); 
     }); 
 })
