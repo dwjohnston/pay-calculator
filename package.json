@@ -8,10 +8,18 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.5",
     "babel-jest": "^27.0.5",
-    "jest": "^27.0.5"
+    "jest": "^27.0.5",
+    "typescript": "^4.3.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest", 
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "date-fns": "^2.22.1"
   }
 }
