@@ -97,7 +97,7 @@ export function calculateAnnualTax(grossIncome: number): number {
 
 /** I'm going to assume here that the pay periods are _always_ some number of months, that start on the first of a month and end of the last of a month. 
  * 
- *  In New Zealand for example you paying fortnightly (every two weeks) is common. 
+ *  In New Zealand for example paying fortnightly (every two weeks) is common. 
  *  And then of course maybe you would issue a payslip for just three days work. 
  *  But for the purpose of this exercise, that complicates things quite a lot. 
 */
