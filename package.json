@@ -1,0 +1,8 @@
+{
+  "name": "pay-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dwjohnston/pay-calculator.git",
+  "author": "David Johnston <david@blacksheepcode.com>",
+  "license": "MIT"
+}
